@@ -12,19 +12,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-binding.translate.setOnClickListener {
-    Toast.makeText(this, "Khaed", Toast.LENGTH_SHORT).show()
+        binding.translate.setOnClickListener {
+            Toast.makeText(this, "Khaed", Toast.LENGTH_SHORT).show()
 
-}
+        }
 
 
         binding.like.setOnClickListener {
             Toast.makeText(this, "like", Toast.LENGTH_SHORT).show()
         }
 
-        binding.translate.setOnClickListener{
-            binding.showTranslate.text = "Steps to register in #معسكر_طويق_1000 Remote for available software paths\n" +
-                    " Registration via the educational platform link:http://satr.codes"
+        binding.translate.setOnClickListener {
+            binding.showTranslate.text =
+                "Steps to register in #معسكر_طويق_1000 Remote for available software paths\n" +
+                        " Registration via the educational platform link:http://satr.codes"
         }
 
         binding.replay.setOnClickListener {
